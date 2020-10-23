@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+    <bean id="acmeCustomWH" parent="abstractWH" class="org.jahia.modules.acmeCustomWorkflows.AcmeCustomWorkItemHandler">
+        <property name="name" value="ACME Custom work item handler"/>
+        <property name="mailService" ref="MailService"/>
+    </bean>
+    
+    <bean name="acme-custom-workflow" class="org.jahia.services.workflow.WorklowTypeRegistration">
+        <property name="type" value="publish"/>
+        <property name="definition" value="acme-custom-workflow"/>
+        <property name="forms">
+            <map>
+                <entry key="start" value="jnt:simpleWorkflow"/>
+                <entry key="review" value="jnt:simpleWorkflow"/>
+            </map>
+        </property>
+        <property name="permissions" >
+            <map>
+                <entry key="start" value="publication-start"/>
+                <entry key="review" value="publication-review"/>
+            </map>
+        </property>
+    </bean>
+
+    <bean class="org.jahia.services.workflow.WorklowTypeRegistration">
+        <property name="type" value="publish"/>
+        <property name="definition" value="1-step-publication-acme"/>
+        <property name="canBeUsedForDefault" value="true"/>
+        <property name="defaultPriority" value="1"/>
+        <property name="permissions" >
+            <map>
+                <entry key="start" value="publication-start"/>
+                <entry key="notified" value="publication-notified"/>
+            </map>
+        </property>
+        <property name="forms">
+            <map>
+                <entry key="start" value="jnt:simpleWorkflow"/>
+                <entry key="review" value="jnt:simpleWorkflow"/>
+            </map>
+        </property>
+    </bean>    
+    
+
+</beans>

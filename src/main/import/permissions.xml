@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<permissions jcr:primaryType="jnt:permission"
+             xmlns:jcr="http://www.jcp.org/jcr/1.0"
+             xmlns:j="http://www.jahia.org/jahia/1.0"
+             xmlns:jnt="http://www.jahia.org/jahia/nt/1.0">
+    <acme-workflow-tasks jcr:primaryType="jnt:permission">
+        <publication-notified jcr:primaryType="jnt:permission"/>
+    </acme-workflow-tasks>
+</permissions>
+
