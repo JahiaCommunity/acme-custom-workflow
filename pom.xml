@@ -52,12 +52,12 @@
     <parent>
         <artifactId>jahia-modules</artifactId>
         <groupId>org.jahia.modules</groupId>
-        <version>7.3.2.0</version>
+        <version>8.0.1.0</version>
     </parent>
-    <groupId>org.jahia.modules</groupId>
-    <artifactId>acme-custom-workflow</artifactId>
-    <name>ACME Custom workflow</name>
-    <version>1.0.0</version>    
+    <groupId>org.huault.modules</groupId>
+    <artifactId>acme-workflow-v8</artifactId>
+    <name>ACME Custom workflow V8</name>
+    <version>2.0.1</version>    
     <packaging>bundle</packaging>
     <description>ACME Workflow module</description>
 
@@ -86,6 +86,7 @@
                 <configuration>
                     <instructions>
                         <Jahia-Depends>default</Jahia-Depends>
+                        <Require-Capability>osgi.extender;filter:="(osgi.extender=org.jahia.bundles.blueprint.extender.config)"</Require-Capability>
                     </instructions>
                 </configuration>
             </plugin>
