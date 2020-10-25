@@ -2,14 +2,13 @@
     <img src="https://doc.jahiacommunity.org/files/live/sites/doc/files/logos/jc-resource-center-200.png" alt="Jahia Community logo" title="Jahia Community Documentation" align="right" height="60" />
 </a>
 
-ACME custom workflow - <a href="README.en.md">English version</a>
+ACME Custom workflow - <a href="README.md">Version française</a>
 ======================
-Ce module résulte d'une serie de vidéos visant à présenter la personnalisation du workflow de publication du CMS Jahia : 
+This module result of a serie of vidéos showing customizing publication workflow for Jahia CMS: 
 https://www.youtube.com/playlist?list=PLMjN6D6Wh_sYPLDlEfn2t-VFpUME2P5ru
 
-Il part de l'exemple fournit par l'éditeur : 
+The starting point is a sample from editor : 
 https://github.com/Jahia/dx-examples/tree/master/example-workflow
 
-selon le tutoriel du même éditeur : 
+As explained by tutorial from same editor : 
 https://academy.jahia.com/documentation/developer/jahia/advanced-guides/workflows/creating-a-workflow-tutorial
-
